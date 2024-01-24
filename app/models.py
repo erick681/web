@@ -5,7 +5,7 @@ class Tarefas(models.Model):
     STATUS_CHOICES = [
         (1,'A Fazer'),
         (2,'Fazendo'),
-        (1,'Concluido'),
+        (3,'Concluido'),
     ]
     titulo = models.CharField(max_length=100, null=False,blank=False)
     descrição = models.TextField(null=False,blank=False)
