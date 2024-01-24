@@ -19,7 +19,7 @@
             <td> {{tarefa.titulo}}</td>
             <td> {{tarefa.descrição}}</td>
             <td> {{tarefa.data}}</td>
-            <td> {{tarefa.status}}</td>
+            <td> {{tarefa.get_status_display}}</td>
         </tr>
         {% endfor %}
     </table>
