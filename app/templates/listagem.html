@@ -7,5 +7,22 @@
 </head>
 <body>
     listagem template
+    <table>
+        <tr>
+            <th>Titulo</th>
+            <th>descrição</th>
+            <th>data</th>
+            <th>status</th>
+        </tr>
+        {% for tarefa in tarefas %}
+        <tr>
+            <td> {{tarefa.titulo}}</td>
+            <td> {{tarefa.descrição}}</td>
+            <td> {{tarefa.data}}</td>
+            <td> {{tarefa.status}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{% url 'cadastro' %}"> Cadastrar </a>
 </body>
 </html>
