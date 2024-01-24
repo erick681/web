@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% load bootstrap4 %}
+{% block conteudo %}
+    <h1>
+        listagem de conteudo 
+    </h1>
     listagem template
-    <table>
+    <table class="table">
         <tr>
             <th>Titulo</th>
             <th>descrição</th>
@@ -24,5 +22,4 @@
         {% endfor %}
     </table>
     <a href="{% url 'cadastro' %}"> Cadastrar </a>
-</body>
-</html>
+{% endblock %}
